@@ -1,0 +1,449 @@
+/* Vilakazi Espresso & Curios - External Stylesheet */
+/* Brand: Espresso #4B2E1F | Gold #D4A017 | Terracotta #C65D3B | Cream #F7F1E5 */
+/* VILAKAZI - Elegant & Classy Design - 90+ lines */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #2C1810;
+  background-color: #FDFBF7;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .hero h1 { font-size: 2.2rem; }
+  .menu-grid, .product-grid, .about-grid, .contact-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-card, .menu-card { width: 90%; }
+  nav a { margin: 0 8px; font-size: 0.8rem; }
+}
+
+@media screen and (max-width: 480px) {
+  
+  html { font-size: 14px; }
+  .hero h1 { font-size: 1.8rem; }
+  .about-hero h2, .products-hero h2, .contact-hero h2 { font-size: 2rem; }
+  .contact-form { padding: 20px; }
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FDFBF7;
+  color: #2C1810;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+header {
+  background: radial-gradient(circle at center, #4B2E1F 0%, #24140D 100%);
+  padding: 50px 20px 40px 20px;
+  color: #FDFBF7;
+  border-bottom: 2px solid #D4A017;
+}
+
+header img {
+  width: 145px;
+  height: 145px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2.5px solid #D4A017;
+  background-color: white;
+  padding: 6px;
+  box-shadow: 0 0 30px rgba(212, 160, 23, 0.3);
+  transition: 0.5s ease;
+}
+
+header img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 45px rgba(212, 160, 23, 0.5);
+}
+
+.tagline {
+  font-family: 'Playfair Display', serif;
+  color: #D4A017;
+  letter-spacing: 3px;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 18px;
+  font-weight: 400;
+}
+
+nav {
+  margin-top: 35px;
+}
+
+nav a {
+  color: #FDFBF7;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin: 0 18px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid transparent;
+  opacity: 0.85;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #D4A017;
+  border-bottom: 1px solid #D4A017;
+  opacity: 1;
+}
+
+.hero {
+  padding: 80px 20px 40px 20px;
+  background-color: #FDFBF7;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 46px;
+  font-weight: 400;
+  color: #2C1810;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.hero h1 em {
+  font-style: italic;
+  color: #8B5E3C;
+}
+
+.hero p {
+  margin-top: 15px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #9E8B7E;
+}
+
+.divider {
+  width: 60px;
+  height: 2px;
+  background-color: #D4A017;
+  margin: 25px auto;
+}
+
+.content-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 40px;
+  text-align: left;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.content-text h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.content-img img {
+  width: 380px;
+  border-radius: 4px;
+  box-shadow: 15px 15px 0px #F3E9D9;
+  border: 1px solid #E8DDD0;
+}
+
+video {
+  margin-top: 40px;
+  width: 70%;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+footer {
+  margin-top: 80px;
+  padding: 30px;
+  background: #2C1810;
+  color: #CBB8A7;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* About Us - Elegant */
+.about-hero {
+  padding: 70px 20px 30px 20px;
+}
+
+.about-hero h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 400;
+}
+
+.about-wrapper {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: left;
+  line-height: 1.9;
+  color: #5C4A40;
+}
+
+.about-wrapper h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  color: #2C1810;
+  margin-top: 50px;
+}
+
+.about-grid {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.about-box {
+  flex: 1;
+  min-width: 250px;
+  background: #FFFFFF;
+  border: 1px solid #F3E9D9;
+  padding: 35px;
+  border-left: 3px solid #D4A017;
+}
+
+.about-box h4 {
+  font-family: 'Playfair Display', serif;
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.quote {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 22px;
+  color: #8B5E3C;
+  text-align: center;
+  margin: 60px auto;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+
+/* Products & Services - Elegant */
+.products-hero {
+  padding: 70px 20px 20px 20px;
+}
+.products-hero h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 400;
+}
+.product-section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  margin: 70px 0 10px 0;
+  color: #2C1810;
+}
+.product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+.product-card {
+  width: 260px;
+  background: white;
+  border: 1px solid #F3E9D9;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: 0.4s ease;
+  text-align: left;
+}
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(44,24,16,0.1);
+  border-color: #D4A017;
+}
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+.product-card-content {
+  padding: 20px;
+}
+.product-card-content h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  margin: 0 0 8px 0;
+  color: #2C1810;
+}
+.product-card-content p {
+  font-size: 13px;
+  color: #9E8B7E;
+  line-height: 1.6;
+  margin: 0;
+}
+.product-card-content .price {
+  display: block;
+  margin-top: 12px;
+  color: #D4A017;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.services-box {
+  max-width: 800px;
+  margin: 60px auto;
+  background: #2C1810;
+  color: #CBB8A7;
+  padding: 50px 40px;
+  border-left: 4px solid #D4A017;
+  text-align: left;
+}
+.services-box h3 {
+  font-family: 'Playfair Display', serif;
+  color: #FDFBF7;
+  font-size: 28px;
+  margin-top: 0;
+}
+.services-box ul {
+  list-style: none;
+  padding: 0;
+}
+.services-box li {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  font-size: 14px;
+}
+.services-box li::before {
+  content: "— ";
+  color: #D4A017;
+}
+
+/* Contact Us - Elegant */
+.contact-hero {
+  padding: 70px 20px 20px 20px;
+}
+.contact-hero h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 400;
+}
+.contact-wrapper {
+  max-width: 1000px;
+  margin: 50px auto;
+  display: flex;
+  gap: 40px;
+  padding: 0 20px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.contact-info {
+  flex: 1;
+  min-width: 280px;
+}
+.contact-info h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: #2C1810;
+}
+.contact-info p {
+  color: #5C4A40;
+  line-height: 1.8;
+  font-size: 14px;
+}
+.contact-detail {
+  margin-top: 30px;
+  padding: 20px 0;
+  border-top: 1px solid #F3E9D9;
+}
+.contact-detail strong {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #D4A017;
+  margin-bottom: 6px;
+}
+.contact-form {
+  flex: 1.2;
+  min-width: 320px;
+  background: #FFFFFF;
+  border: 1px solid #F3E9D9;
+  padding: 40px;
+}
+.contact-form label {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #9E8B7E;
+  margin-bottom: 8px;
+  margin-top: 20px;
+}
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #E8DDD0;
+  background: #FDFBF7;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+.contact-form input:focus, .contact-form textarea:focus {
+  border-color: #D4A017;
+  background: #FFFFFF;
+}
+.contact-form textarea {
+  height: 120px;
+  resize: none;
+}
+.contact-form button {
+  margin-top: 25px;
+  width: 100%;
+  padding: 15px;
+  background: #2C1810;
+  color: #FDFBF7;
+  border: 1px solid #2C1810;
+  font-size: 11px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact-form button:hover {
+  background: #D4A017;
+  border-color: #D4A017;
+}
+.map-box {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+.map-box iframe {
+  width: 100%;
+  height: 300px;
+  border: 1px solid #F3E9D9;
+  filter: grayscale(20%);
+}
